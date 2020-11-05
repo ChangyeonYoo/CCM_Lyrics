@@ -2,9 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 
 lyrics = []
-musicId = 19399121
-url2 = "https://music.naver.com/lyric/index.nhn?trackId="+str(musicId)
-response = requests.get(url2)
+musicId = 43013246
+url = "https://music.naver.com/lyric/index.nhn?trackId="+str(musicId)
+response = requests.get(url)
 
 html = response.text
 soup = BeautifulSoup(html, 'html.parser')
